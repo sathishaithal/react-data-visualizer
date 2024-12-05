@@ -1,38 +1,17 @@
-.App {
-  text-align: center;
+body {
+  @apply bg-gradient-to-br from-gray-100 to-gray-200 text-gray-800 font-sans;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  @apply px-4 py-2 rounded-md text-white bg-blue-500 hover:bg-blue-600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="file"] {
+  @apply cursor-pointer text-sm text-gray-800;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, h2 {
+  @apply font-bold text-center;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
